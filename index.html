@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('style.css');
+    </style>
+  </head>
+  <body>
+    <center>
+        <div class="main-heading">
+            <h1>can u turn the light on ?</h1> 
+            <button onclick="lightOn()" class="On">turn light On</button>
+            <i id="bulb" class="fa-sharp fa-regular fa-lightbulb" ></i>
+            <button onclick="lightOf()" class="On"> turn light of</button>
+            
+        </div>
+    </center>
+    <script >
+        
+        function lightOn() {
+            let bulb = document.getElementById('bulb');
+           // bulb.classList.remove('fa-regular');
+           // bulb.classList.add('fa-solid');
+            bulb.classList.remove('fa-solid');
+            bulb.classList.add('fa-regular');
+        }
+    
+        function lightOf() {
+            let bulb = document.getElementById('bulb');
+           // bulb.classList.remove('fa-solid');
+           // bulb.classList.add('fa-regular');
+           
+            bulb.classList.remove('fa-regular');
+            bulb.classList.add('fa-solid');
+
+        }
+        
+        
+     </script>
+  </body>
+</html>
